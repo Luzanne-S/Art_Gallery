@@ -174,7 +174,7 @@ a{
 #location-main{
    color:#fff;
    display: flex;
-   flex-direction: row;
+   flex-direction: column;
 }
 .footer-logo-l{
   color: #000;
@@ -323,5 +323,9 @@ strong{
   width:500px;
   padding-left: 30px;
 }
-  
+#location-main{
+  color:#fff;
+  display: flex;
+  flex-direction: row;
+} 
 }

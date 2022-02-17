@@ -156,9 +156,30 @@ a{
   .footer-logo{
     padding-top: 10%;
   }
-  footer,.images-content2,.btn1{
+  footer,.images-content2,.btn1,#location-main{
       background-color:#000;  
   }
+.location-footer{
+  background-color: #D5966B;
+  color: #000;
+}
+.location1,.location2{
+  display: flex;
+  flex-direction: column;
+}
+
+.location-h3{
+  color:#D5966B;
+}
+#location-main{
+   color:#fff;
+   display: flex;
+   flex-direction: row;
+}
+.footer-logo-l{
+  color: #000;
+}
+ 
   .images-content2{
     padding: 10px;
     margin-bottom: 50px;
@@ -236,6 +257,7 @@ footer{
   padding:20px 12px;
   margin: auto;
 }
+
 #cta{
   justify-content: center;
 }

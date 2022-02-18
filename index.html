@@ -12,6 +12,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest"> 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css"/>
     <script src="index.js" defer></script>
     <title>Modern Art Gallery</title>
@@ -35,20 +37,24 @@
  <div id="main">
      <div class="black-box"></div>
  <img class="main-img" src="images/pexels-dom-j-297494.jpg" />
- <h1><strong>Mod</strong>ern Art<strong> Gall</strong>ery</h1>
- <div class="main-text">
+ <h1 data-aos="fade-right"  data-aos-duration="2000"><strong>Mod</strong>ern Art<strong> Gall</strong>ery</h1>
+ <div  data-aos="fade-right" data-aos-duration="2000" class="main-text">
  <p class="main-p">Our art collection is inspired by individual experience and interpretation of the world&#46; Visit our gallery to explore nuances and get inspired&#46;</p>
 
  <div class="locate">
- <button class="btn1" a href="location.html">OUR LOCATION</button>
+ <button class="btn1"> <a href="location.html">OUR LOCATION
+</a>
+ </button>
      <button class="btn2">
         <i class="fa-solid fa-angle-right"></i>
      </button>
     </div>
- </div>
+</div>
+
  </div>
  <!--Images Grid-->
- <div id="images">
+ <div data-aos="fade-up"
+ data-aos-duration="3000" id="images">
      <div class="images-row1">
      <div class="images-content1">
          <h2 class="h2-a">YOUR DAY AT THE GALLERY</h2>
@@ -91,6 +97,9 @@ Modern Art Gallery is open to all visitors and open 7 days a week from 9am to 3p
 </div>
 </div>
  </footer>
+ <script>
+    AOS.init();
+  </script>
 </body>
 <!--Pexels Images
 Photo by Robin Schreiner from Pexels

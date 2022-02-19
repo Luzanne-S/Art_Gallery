@@ -12,6 +12,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.1.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="styles.css"/>
     <script src="index.js" defer></script>
     <title>Modern Art Gallery</title>
@@ -19,22 +21,24 @@
 <body>
   <!--Navbar-->
  <header>
-    <div id="brand"><a class="header-logo" href="/">MG</a></div>
     <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
         <ul class="mobile-menu">
+          <li><a class="header-logo-l" href="/">MG</a></li>
           <li><a href="index.html">Home</a></li>
           <li><a href="#cta">Contact</a></li>
         </ul>
       </div>
  </header> 
- <button class="btn1" a href="location.html">OUR LOCATION</button>
-     <button class="btn2">
-        <i class="fa-solid fa-angle-right"></i>
-     </button>  
+ <button class="btn-location1">
+  <i class="fa-solid fa-angle-left"></i>
+</button> 
+ <button class="btn-location"> <a href="index.html">OUR LOCATION</a></button>
+   
      <!--Location Main-->
+     <div id="map"></div>
 
      <!--Location Information-->
      <div id="location-main">
@@ -42,13 +46,15 @@
    <h1 class="location-h1">OUR LOCATION</h1>
     </div>
     <div  class="location2">
-  <h3 class="location-h3">88 KING STREET</h3>
-  <p>
-   address....
+  <h3 class="location-h3">24 Louw Geldenhuys Drive</h3>
+  <p class="address-p">Emmarentia
+    <br/>
+    Randburg, 2195
+  <br/>
+  <p class="address-p2">
+   Our newly opened gallery is located near the Johannesburg Botanical Gardens Open seven days a week from  9am to 3pm&#46; 
   </p>
-  <p>
-   Our newly opened gallery is located in...... Open seven days a week from  9am to 3pm&#46; 
-</p>
+  </p>
     </div>
      </div>
      <!--Footer-->
@@ -63,11 +69,12 @@
     </p>
     </div>
     <div class="footer-row3">
-        <div class="social-icon"><i class="fa-brands fa-twitter"></i></div>
-        <div class="social-icon"><i class="fa-brands fa-facebook-f"></i></div>
-        <div class="social-icon"><i class="fa-brands fa-instagram"></i></div>
+        <div class="social-icon-l"><i class="fa-brands fa-twitter"></i></div>
+        <div class="social-icon-l"><i class="fa-brands fa-facebook-f"></i></div>
+        <div class="social-icon-l"><i class="fa-brands fa-instagram"></i></div>
     </div>
     </div>
      </footer>
+   
 </body>
 </html>

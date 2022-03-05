@@ -5,7 +5,7 @@ In addition to frontend mentor layout. I added a mobile navigation bar, custom f
 
 ### Screenshot
 
-![](./mg.png)
+![](images/mg.png)
 
 
 ### Links
